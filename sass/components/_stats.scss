@@ -1,0 +1,49 @@
+.stats {
+    display: grid;
+    width: 90%;
+    margin: 10rem auto;
+
+    grid-template-rows: repeat(3, 30rem);
+    grid-template-columns: 40rem 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+    
+    //Make this just be a flat line
+    & > * {
+        // border: 2px solid $color-primary-darkest;
+    }
+
+    &__left-box {
+        position: relative;
+    }
+
+    &__right-box {
+        // padding-top:rem;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__statistic {
+        font-size: 5rem;
+        color: $color-primary-darkest;
+        font-weight: 900;
+    }
+
+    &__caption {
+        font-size: 4rem;
+        color: $color-primary-darkest;
+        font-weight: 100;
+    }
+
+    &__icon {
+        fill: $color-primary-darkest;
+        height: 20rem;
+        width: 20rem;
+        position: absolute;
+        top: 4rem;
+        left: 10rem;
+    }
+}

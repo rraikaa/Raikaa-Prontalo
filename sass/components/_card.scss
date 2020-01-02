@@ -1,0 +1,179 @@
+.card {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 35%;
+    margin-top: 6rem;
+    // margin-left: 8rem;
+
+     // FUNCTIONALITY
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    //Make the card container that holds both be flex container and do width based on that
+    //Add icons to list, maybe remove lines, embed youtube video to back
+    //change the buttons to the video from youtube
+    //Make the image smaller on card and text bigger
+    &__side {
+        height: 70vh;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-sizing: content-box; 
+        box-shadow: 0 1.5rem 4rem rgba($color-primary-darkest, .4);
+
+        &--front {
+            background-color: $color-white;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+        }
+    }
+
+     &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+
+    &__video-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__steps {
+
+        &--container {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            padding-left: 3rem;
+        }
+
+       
+        &--individual-container {
+            display: flex;
+            position: relative;
+            align-items: center;
+            color: $color-primary-darkest;
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+        &--number-icon {
+            height: 5rem;
+            width: 5rem;
+            fill: $color-primary-dark;
+            margin-left: 1rem;
+            margin-right: .5rem;
+        }
+
+        &--text {
+            padding-left: 1rem;
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+    }
+
+    &__picture {
+
+        background-size: cover;
+        background-position: bottom;
+        height: 45%;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .3), rgba($color-primary-dark, .3)), url(../../img/house-card.jpeg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .3), rgba($color-primary-dark, .3)), url(../../img/money.jpeg);
+            background-position: center;
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 19rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1,
+        &--2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary-darkest, 1), 
+            rgba($color-primary-dark, 1));
+        }
+    }
+
+    //MAKE IT SO WHEN VIDEO IS CLICKED IT MAKES IT BIX BOX WITH BLUR
+
+    &__backside-container {
+        text-align: center;
+        color: $color-primary-darkest;
+        // padding-bottom: 10rem;
+        padding-top: 3rem;
+        height: 90%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__video--description {
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+
+    }
+
+    &__video-video-box {
+        margin: 0 auto;
+        width: 42rem;
+        height: 27rem;
+    }
+
+    &__video-video {
+        margin: 0 auto;
+        border: 1rem solid $color-primary-darkest;
+        box-shadow: 0 2rem 3rem rgba($color-primary-darkest, .2);
+    }
+}

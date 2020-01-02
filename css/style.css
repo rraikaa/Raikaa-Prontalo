@@ -1,0 +1,403 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif; }
+
+.navigation {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 15rem;
+  align-items: center;
+  color: #2191FB;
+  padding-bottom: 2rem; }
+  .navigation__bar {
+    margin-right: 5rem; }
+  .navigation__logo-name-container {
+    display: flex;
+    position: relative;
+    padding-left: 5rem;
+    align-items: center; }
+  .navigation__name {
+    padding-left: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2191FB; }
+  .navigation__item {
+    display: inline-block;
+    font-size: 3rem;
+    text-decoration: none; }
+    .navigation__item:not(:last-child) {
+      padding-right: 3rem; }
+  .navigation__bar {
+    padding-right: 10rem; }
+  .navigation__link, .navigation__link:active, .navigation__link:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #2191FB;
+    font-weight: 300; }
+
+.stats {
+  display: grid;
+  width: 90%;
+  margin: 10rem auto;
+  grid-template-rows: repeat(3, 30rem);
+  grid-template-columns: 40rem 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 2rem; }
+  .stats__left-box {
+    position: relative; }
+  .stats__right-box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .stats__statistic {
+    font-size: 5rem;
+    color: #1F487E;
+    font-weight: 900; }
+  .stats__caption {
+    font-size: 4rem;
+    color: #1F487E;
+    font-weight: 100; }
+  .stats__icon {
+    fill: #1F487E;
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    top: 4rem;
+    left: 10rem; }
+
+.line-break {
+  margin: 5rem auto 2rem auto;
+  height: .2rem;
+  width: 80%;
+  background-color: #1F487E; }
+  .line-break__bar {
+    display: block; }
+
+.button-main {
+  outline: none;
+  padding-top: 3rem;
+  color: #1F487E;
+  font-size: 2rem;
+  margin-right: .2rem;
+  padding: 2rem 4rem;
+  border: 4px solid #1F487E;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  transition: all .2s; }
+  .button-main:hover, .button-main:active {
+    cursor: pointer;
+    transform: translateX(-1rem);
+    transform: translateY(-0.5rem); }
+
+.bold-heading {
+  font-family: 'Roboto', sans-serif;
+  color: #1F487E;
+  font-size: 6rem;
+  font-weight: 900; }
+
+.card {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 35%;
+  margin-top: 6rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-around; }
+  .card__side {
+    height: 70vh;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-sizing: content-box;
+    box-shadow: 0 1.5rem 4rem rgba(31, 72, 126, 0.4); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__video-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .card__steps--container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-left: 3rem; }
+  .card__steps--individual-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #1F487E; }
+    .card__steps--individual-container:not(:last-child) {
+      margin-bottom: 1rem; }
+  .card__steps--number-icon {
+    height: 5rem;
+    width: 5rem;
+    fill: #347FC4;
+    margin-left: 1rem;
+    margin-right: .5rem; }
+  .card__steps--text {
+    padding-left: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center; }
+  .card__picture {
+    background-size: cover;
+    background-position: bottom;
+    height: 45%;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, rgba(86, 226, 255, 0.3), rgba(52, 127, 196, 0.3)), url(../../img/house-card.jpeg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, rgba(86, 226, 255, 0.3), rgba(52, 127, 196, 0.3)), url(../../img/money.jpeg);
+      background-position: center; }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 19rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1, .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, #1f487e, #347fc4); }
+  .card__backside-container {
+    text-align: center;
+    color: #1F487E;
+    padding-top: 3rem;
+    height: 90%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around; }
+  .card__video--description {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase; }
+  .card__video-video-box {
+    margin: 0 auto;
+    width: 42rem;
+    height: 27rem; }
+  .card__video-video {
+    margin: 0 auto;
+    border: 1rem solid #1F487E;
+    box-shadow: 0 2rem 3rem rgba(31, 72, 126, 0.2); }
+
+.btn-modern {
+  width: 15rem;
+  height: 6rem;
+  background: none;
+  border: 4px solid;
+  color: #1F487E;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.6rem;
+  position: relative; }
+
+.btn-modern::before,
+.btn-modern::after {
+  content: "";
+  position: absolute;
+  width: 1.4rem;
+  height: .4rem;
+  background: #fff;
+  transform: skewX(50deg);
+  transition: .2s linear; }
+
+.btn-modern::before {
+  top: -.4rem;
+  left: 10%; }
+
+.btn-modern::after {
+  bottom: -.4rem;
+  right: 10%; }
+
+.btn-modern:hover::before {
+  left: 80%; }
+
+.btn-modern:hover::after {
+  right: 80%; }
+
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  flex-direction: column; }
+
+.hook {
+  display: flex;
+  position: relative;
+  flex: 1; }
+  .hook__left-side {
+    flex: 0 0 50%;
+    position: relative; }
+  .hook__right-side {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .hook__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    height: 100%; }
+    .hook__text--top {
+      flex: 0 0 50%;
+      padding-top: 7rem; }
+    .hook__text--bottom {
+      padding-top: 8rem;
+      flex: 0 0 50%; }
+  .hook__slogan {
+    font-family: 'Roboto', sans-serif;
+    color: #1F487E;
+    font-size: 6rem;
+    font-weight: 900; }
+  .hook__subtitle {
+    font-size: 3.5rem;
+    padding-left: 5rem;
+    color: #347FC4; }
+  .hook__button-box--frontpage {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 3rem; }
+  .hook__house-clip {
+    width: 50vw;
+    background-image: url(../../img/wide-house.jpg);
+    background-size: contain;
+    background-position: top;
+    position: relative;
+    justify-content: end;
+    margin-bottom: -16.1vh;
+    filter: blur(2px) opacity(0.9); }
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      .hook__house-clip {
+        -webkit-clip-path: polygon(50% 0, 62% 10%, 62% 0, 73% 0, 73% 17%, 100% 38%, 85% 38%, 85% 80%, 60% 80%, 60% 70%, 40% 70%, 40% 80%, 15% 80%, 15% 38%, 0 38%);
+        clip-path: polygon(50% 0, 62% 10%, 62% 0, 73% 0, 73% 17%, 100% 38%, 85% 38%, 85% 80%, 60% 80%, 60% 70%, 40% 70%, 40% 80%, 15% 80%, 15% 38%, 0 38%);
+        height: 76.6vh; } }
+
+.tutorial {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+  flex-direction: column; }
+  .tutorial__title {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #1F487E;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem; }
+  .tutorial__sides-container {
+    flex: 1;
+    display: flex;
+    position: relative; }
+  .tutorial__side--left {
+    flex: 0 0 50%; }
+  .tutorial__side--left--container {
+    width: 80%;
+    border: 3rem solid #1F487E;
+    border-radius: 5px;
+    margin: 0 auto; }
+  .tutorial__description {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #347FC4;
+    text-align: center;
+    margin-top: 3rem; }
+  .tutorial__icon-text-container {
+    display: flex;
+    position: relative; }
+  .tutorial__icon-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 5rem 8rem 5rem 20rem; }
+  .tutorial__icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    fill: #347FC4;
+    margin-bottom: 7rem; }
+  .tutorial__text-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 6rem;
+    justify-content: space-between; }
+  .tutorial__text-item {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: 100; }
+  .tutorial__side--right {
+    flex: 0 0 50%; }
+
+.real-estate-box {
+  position: relative;
+  padding-left: 10rem;
+  width: 100%; }
+  .real-estate-box__components {
+    display: flex;
+    position: relative; }
+  .real-estate-box__key {
+    padding-top: -10rem;
+    top: 1rem; }
+  .real-estate-box__text {
+    flex: 1;
+    text-align: center;
+    margin-right: 2rem; }
+  .real-estate-box__text--regular {
+    font-size: 6rem;
+    color: #347FC4; }
+    .real-estate-box__text--regular:not(:last-of-type) {
+      margin-top: 5rem; }
+  .real-estate-box__text--bold {
+    font-size: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }

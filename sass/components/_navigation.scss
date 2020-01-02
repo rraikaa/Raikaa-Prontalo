@@ -1,0 +1,57 @@
+//This file is for the ENTIRE bar (links and logo/name)
+.navigation {
+
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 15rem;
+    align-items: center;
+    color: $color-primary;
+    padding-bottom: 2rem;
+
+
+    &__bar {
+        margin-right: 5rem;
+    }
+
+    &__logo-name-container {
+        display: flex;
+        position: relative;
+        padding-left: 5rem;
+        // padding-top: 4rem;
+        align-items: center;
+    }
+
+
+    &__name {
+        padding-left: 2rem;
+        font-size: 3rem;
+        font-weight: 600;
+        color: $color-primary;
+    }
+
+    &__item {
+        display: inline-block;
+        font-size: 3rem;
+        text-decoration: none;
+  
+        &:not(:last-child) {
+            padding-right: 3rem;
+        }
+    }
+
+    &__bar {
+        padding-right: 10rem;
+
+    }
+
+    &__link,
+    &__link:active,
+    &__link:visited {
+        text-decoration: none;
+        font-size: 2rem;
+        color: $color-primary;
+        font-weight: 300;
+    }
+}
+
