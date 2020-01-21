@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
 
     <title>Prontalo</title>
@@ -16,9 +17,7 @@
 <body>
 
     <header class="landing-page">
-
         <div class="navigation">
-
             <div class="navigation__logo-name-container">
                 <img src="./img/logonew.png" alt="Logo" class="navigation__logo">
                 <span class="navigation__name">Prontalo</span>
@@ -27,11 +26,16 @@
             <nav class="navigation__bar">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Benefits</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link">How It Works</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link">Benefits </a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
                 </ul>
             </nav>
+
+            <div class="navigation__account">
+                <button class="navigation__button-bubble--login button-bubble">Log In</button>
+                <button class="navigation__button-bubble--sign-up button-bubble">Sign Up</button>
+            </div>
         </div>
 
         <div class="hook">
@@ -47,14 +51,6 @@
             </div>
 
             <div class="hook__right-side">
-                <!-- 
-                    <div class="hook__button-box">
-                        <button class="hook__button hook__button--buy button-main"><a href="#" class="hook__link"></a>Buy</button>
-                        <button class="hook__button hook__button--sell button-main"><a href="#" class="hook__link"></a>Sell</button>
-                        <button class="hook__button hook__button--browse button-main"><a href="#" class="hook__link"></a>Browse</button>
-                    </div>
-                 -->
-
                 <div class="hook__button-box--frontpage">
                     <button class="btn-modern">Buy</button>
                     <button class="btn-modern">Sell</button>
@@ -66,31 +62,103 @@
         </div>
     </header>
 
-    <div class="line-break">
+    <!-- Line Break -->
+    <!-- <div class="line-break">
         <span class="line-break__bar"></span>
-    </div>
+    </div> -->
 
+    <!-- Main Section of Website -->
     <main>
+
+        <!-- <div class="phrase__container">
+            <h1 class="phrase__text">Unlock The Keys to Your Dream Home</h1>
+        </div> -->
+        <!-- Section with search -->
+        <div class="search">
+            
+            
+                <h1 class="search__phrase">Find homes near you</h1>
+                <img src="./img/nebkey2.png" alt="key outline" class="search__key">
+                <div class="search__box">
+                    <form action="" class="search__bar">
+                        <input type="text" class="search__input" placeholder="Enter an Address, City, or Zip Code">
+                        <button class="search__button">
+                            <!-- <svg class="search__icon">
+                                <use xlink:href="img/sprite.svg#icon-search"></use>
+                            </svg> -->
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- <div class="search__bar-box">
+                    <input type="text" placeholder="Address, City, Zip">
+                    <form action="#"></form>
+                </div> -->
+<!--             
+            <div class="search__container">
+                <h1 class="search__phrase">Unlock The Keys to Your Dream Home</h1>
+            </div> -->
+        </div>
         
+        <!-- Section with Key image -->
         <div class="real-estate-box">
             <div class="real-estate-box__components">
-                <img src="./img/roomkey.png" alt="key outline" class="real-estate-box__key">
+                
                 <div class="real-estate-box__text">
-                    <h3 class="real-estate-box__text--regular">The</h3>
-                    <div class="real-estate-box__text--bold bold-heading">New Way</div>
-                    <h3 class="real-estate-box__text--regular">of Doing Real Estate</h3>
+                    <span class="real-estate-box__text--regular">The</span>
+                    <span class="real-estate-box__text--bold bold-heading">New Way</span>
+                    <span class="real-estate-box__text--regular">of Doing Real Estate</span>
                 </div>
+            </div>
+
+            <div class="real-estate-box__stats-container">
+                <div class="real-estate-box__stats-box real-estate-box__stats-box--1">
+                    <p class="stats-box--1__paragraph">Only</p>
+                    <div class="stats-box--1__large-text bold-heading">4%</div>
+                    <p class="stats-box--1__paragraph">Base Commission</p>
+                    <!-- Line Break -->
+                    <div class="real-estate-box__line-break line-break">
+                        <span class="line-break__bar"></span>
+                    </div>
+                    <p class="stats-box--1__paragraph">Save Thousands By Eliminating Real Estate Agent Fees</p>
+                </div>
+                <div class="real-estate-box__stats-box real-estate-box__stats-box--2">
+                    <p class="stats-box--1__paragraph">Message Directly With</p>
+                    <div class="stats-box--1__large-text bold-heading">Buyers</div>
+                    <!-- Line Break -->
+                    <div class="real-estate-box__line-break line-break">
+                        <span class="line-break__bar"></span>
+                    </div>
+                    <p class="stats-box--1__paragraph">Save Months of Your Time By Getting Your House Listed in Just Minutes!</p>
+                </div>
+
+                <div class="real-estate-box__stats-box real-estate-box__stats-box--2">
+                    <p class="stats-box--1__paragraph">On Average A House is On Prontalo For Just</p>
+                    <div class="stats-box--1__large-text bold-heading">23 Days</div>
+                    <!-- Line Break -->
+                    <div class="real-estate-box__line-break line-break">
+                        <span class="line-break__bar"></span>
+                    </div>
+                    <p class="stats-box--1__paragraph">3x Faster Than The National Average!</p>
+                </div>
+                
             </div>
         </div>
 
+        <!-- Line Break -->
         <div class="line-break" >
             <span class="line-break__bar"></span>
         </div>
 
+        <!-- How It Works Section -->
         <div class="tutorial">
             <h3 class="tutorial__title">How It Works</h3>
+
+            <!-- Container for both cards -->
             <div class="card__container">
-                <div class="card card--left">
+                <!-- Left Card -->
+                <div class="card">
+                    <!-- Front side of Left Card -->
                     <div class="card__side card__side--front">
                         <div class="card__picture card__picture--1">
                             &nbsp;
@@ -101,31 +169,35 @@
                         <div class="card__steps">
 
                             <div class="card__steps--container">
-                                
+                                <!-- Holds an individual icon & step -->
                                     <div class="card__steps--individual-container">
                                         <svg class="card__steps--number-icon">
                                             <use xlink:href="img/icon-numbers/sprite.svg#icon-number5"></use>
                                         </svg>
                                         <p class="card__steps--text">Browse Available Homes</p>
                                     </div>
+                                    
                                     <div class="card__steps--individual-container">
                                         <svg class="card__steps--number-icon">
                                             <use xlink:href="img/icon-numbers/sprite.svg#icon-number3"></use>
                                         </svg>
                                         <p class="card__steps--text">“Like” Your Favorite homes</p>
                                     </div>
+
                                     <div class="card__steps--individual-container">
                                         <svg class="card__steps--number-icon">
                                             <use xlink:href="img/icon-numbers/sprite.svg#icon-number2"></use>
                                         </svg>
                                         <p class="card__steps--text">Message the Seller to Schedule a Showing</p>
                                     </div>
+
                                     <div class="card__steps--individual-container">
                                         <svg class="card__steps--number-icon">
                                             <use xlink:href="img/icon-numbers/sprite.svg#icon-number4"></use>
                                         </svg>
                                         <p class="card__steps--text">Optionally Pre-submit Documents</p>
                                     </div>
+
                                     <div class="card__steps--individual-container">
                                         <svg class="card__steps--number-icon">
                                             <use xlink:href="img/icon-numbers/sprite.svg#icon-number"></use>
@@ -136,9 +208,12 @@
                         </div>
                     </div>
 
+                    <!-- Back side of left card -->
                     <div class="card__side card__side--back card__side--back-1">
                             <div class="card__backside-container">
+                                <!-- Back Title -->
                                 <p class="card__video--description">Step-by-Step Tutorial</p>
+                                <!-- Back Video -->
                                 <div class="card__video-video-box">
                                     <iframe allowFullScreen="allowFullScreen" class="card__video-video"
                                         src="https://www.youtube.com/embed/eptjIngbcl0?ecver=1&amp;iv_load_policy=1&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=400&amp;width=400"
@@ -150,12 +225,12 @@
                                     </iframe>
                                 </div>
                             </div>
-                            <!-- <a href="#popup" class="btn btn--white">Book now!</a> -->
                     </div>
                 </div>
 
-                <!-- CARD 2 -->
-                <div class="card card--left">
+                <!-- Right Card -->
+                <div class="card">
+                    <!-- Front side of Card -->
                     <div class="card__side card__side--front">
                         <div class="card__picture card__picture--2">
                             &nbsp;
@@ -164,51 +239,53 @@
                             <span class="card__heading-span card__heading-span--2">The Seller</span>
                         </h4>
                         <div class="card__steps">
-                
+                            <!-- Container for all steps -->
                             <div class="card__steps--container">
-                
+                                <!-- Container for individual icon & step -->
                                 <div class="card__steps--individual-container">
                                     <svg class="card__steps--number-icon">
                                         <use xlink:href="img/icon-numbers/sprite.svg#icon-number5"></use>
                                     </svg>
                                     <p class="card__steps--text">Create listing for your home</p>
                                 </div>
+
                                 <div class="card__steps--individual-container">
                                     <svg class="card__steps--number-icon">
                                         <use xlink:href="img/icon-numbers/sprite.svg#icon-number3"></use>
                                     </svg>
                                     <p class="card__steps--text">Upload details/pictures of your home</p>
                                 </div>
+
                                 <div class="card__steps--individual-container">
                                     <svg class="card__steps--number-icon">
                                         <use xlink:href="img/icon-numbers/sprite.svg#icon-number2"></use>
                                     </svg>
                                     <p class="card__steps--text">Connect with potential buyers</p>
                                 </div>
+
                                 <div class="card__steps--individual-container">
                                     <svg class="card__steps--number-icon">
                                         <use xlink:href="img/icon-numbers/sprite.svg#icon-number4"></use>
                                     </svg>
                                     <p class="card__steps--text">Optionally Pre-submit Documents</p>
                                 </div>
+
                                 <div class="card__steps--individual-container">
                                     <svg class="card__steps--number-icon">
                                         <use xlink:href="img/icon-numbers/sprite.svg#icon-number"></use>
                                     </svg>
                                     <p class="card__steps--text">Agree Upon Price, Pay, and Move In!</p>
                                 </div>
-                
-                
-                
                             </div>
-                
                         </div>
                     </div>
-                
+                    <!-- Back side of right card -->
                     <div class="card__side card__side--back card__side--back-1">
                         <div class="card__backside-container">
+                            <!-- Back card title -->
                             <p class="card__video--description">Step-by-Step Tutorial</p>
                             <div class="card__video-video-box">
+                                <!-- Back card video -->
                                 <iframe allowFullScreen="allowFullScreen" class="card__video-video"
                                     src="https://www.youtube.com/embed/eptjIngbcl0?ecver=1&amp;iv_load_policy=1&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=400&amp;width=400"
                                     width="400" height="250" allowtransparency="true" frameborder="0">
@@ -219,102 +296,35 @@
                                 </iframe>
                             </div>
                         </div>
-                        <!-- <a href="#popup" class="btn btn--white">Book now!</a> -->
                     </div>
                 </div>
             </div>
         </div>
- 
-        <!-- <div class="tutorial">
-
-            <div class="tutorial__title-container">
-                <h1 class="tutorial__title">How It Works</h1>
-            </div>
-            
-            <div class="tutorial__sides-container">
-
-                <div class="tutorial__side--left">
-                    
-                    <div class="tutorial__side--left--container">
+        <!-- End of main section -->
+    </main> 
         
-        
-        
-        
-        
-        
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__logo-box">
+                <img src="./img/logo-footer-bold.png" alt="logo" class="footer__logo">
+        </div>
 
-
-
-
-
-
-
-                        <h4 class="tutorial__description tutorial__description--buyer">Buyer</h4>
-    
-                        <div class="tutorial__icon-text-container">
-                            <div class="tutorial__icon-container">
-                                <svg class="tutorial__icon">
-                                    <use xlink:href="img/arrowicon/sprite.svg#icon-circle-right"></use>
-                                </svg>
-                                <svg class="tutorial__icon">
-                                    <use xlink:href="img/arrowicon/sprite.svg#icon-circle-right"></use>
-                                </svg>
-                                <svg class="tutorial__icon">
-                                    <use xlink:href="img/arrowicon/sprite.svg#icon-circle-right"></use>
-                                </svg>
-                                <svg class="tutorial__icon">
-                                    <use xlink:href="img/arrowicon/sprite.svg#icon-circle-right"></use>
-                                </svg>
-                                <svg class="tutorial__icon">
-                                    <use xlink:href="img/arrowicon/sprite.svg#icon-circle-right"></use>
-                                </svg>
-                            </div>
-    
-                            <div class="tutorial__text-container">
-                                <p class="tutorial__text-item">Browse Available Homes</p>
-                                <p class="tutorial__text-item">“Like” Your Favorite homes</p>
-                                <p class="tutorial__text-item">Message the Seller to Schedule a Showing</p>
-                                <p class="tutorial__text-item">Pre-submit Documents for a speedier process</p>
-                                <p class="tutorial__text-item">Agree Upon Price, Pay, and Move In!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tutorial__side--right">
-                    <h4 class="tutorial__description tutorial__description--seller">Seller</h4>
+        <div class="row">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Benefits</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">How It Works</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                    </ul>
                 </div>
 
-            </div>
-        </div> 
-         -->
-        <!-- <div class="stats">
-            <div class="stats__left-box stats__left-box--1">
-                <svg class="stats__icon stats__icon-house">
-                    <use xlink:href="img/icons/sprite.svg#icon-home"></use>
-                </svg>
-            </div>
-            
-            <div class="stats__right-box stats__right-box--1">
-                    <h3 class="stats__statistic"> 1,490,203+</h3>
-                    
-                    <p class="stats__caption">Homes Sold On Prontalo.com This Year</p>
-            </div>
-            <div class="stats__left-box stats__left-box--2">
-                
-            </div>
+                <p class="footer__copyright">
+                    Built by <a href="#" class="footer__link">Roope Raikaa</a> 
+                    Contact us for any assistance needed along the home buying journey!
+                </p>
+        </div>
 
-            <div class="stats__right-box stats__right-box--2">
-               
-            </div>
-            <div class="stats__left-box stats__left-box--3">
-                
-            </div>
-
-            <div class="stats__right-box stats__right-box--3">
-               
-            </div>
-        </div> -->
-    </main>
-    
+    </footer>
 </body>
 </html>

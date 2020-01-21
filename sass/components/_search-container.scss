@@ -1,0 +1,91 @@
+.search {
+
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../img/clouds.jpeg);
+    background-size: cover;
+
+
+    &__phrase {
+       
+        position: absolute;
+        top: 9rem;
+        left: 46%;
+        text-align: center;
+        font-weight: 100;
+        font-size: 4rem;
+        font-family: 'Roboto', sans-serif;
+        // font-family: inherit;
+        color: $color-white;
+
+    }
+
+    &__box {
+        display: flex;
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        transform: translate(-40%, -50%);
+    }
+
+        &__input {  //PUT A BLINKING LINE ICON
+            font-family: inherit;
+            font-size: 2rem;
+            font-weight: 900;
+            color: $color-white;
+            background-color: #97BACE;
+            background-size: cover;
+            border: none;
+            padding: .7rem 2rem;
+            border-radius: .5rem;
+            width: 38rem;
+            height: 4rem;
+            transition: all .2s;
+            position: absolute;
+            top: 95%;
+            left: 100%;
+            transform: translate(-53%, -55%);
+            box-shadow: 0 4px 4px rgba($color-black, .4);
+            
+        &:focus {
+            outline: none;
+
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: var(--color-grey-light-4);
+        }
+    }
+
+    &__input:focus + &__button {
+        background-color: $color-white;
+    }
+
+    &__button {
+        border: none;
+        background-color: $color-white;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+    &__key {
+        width: 65%;
+        margin: auto 0;
+    }
+
+   
+
+}

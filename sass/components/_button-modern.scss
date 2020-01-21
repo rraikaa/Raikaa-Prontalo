@@ -9,6 +9,12 @@
     cursor: pointer;
     font-size: 1.6rem;
     position: relative;
+
+    &:active,
+    &:hover,
+    &:focus {
+        outline: none;
+    }
 }
 
 .btn-modern::before,
@@ -38,3 +44,4 @@
 .btn-modern:hover::after {
     right: 80%;
 }
+

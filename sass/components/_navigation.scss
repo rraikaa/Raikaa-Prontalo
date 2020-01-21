@@ -3,22 +3,17 @@
 
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 15rem;
     align-items: center;
     color: $color-primary;
     padding-bottom: 2rem;
-
-
-    &__bar {
-        margin-right: 5rem;
-    }
+    // padding-right: 10rem;
 
     &__logo-name-container {
         display: flex;
         position: relative;
         padding-left: 5rem;
-        // padding-top: 4rem;
         align-items: center;
     }
 
@@ -41,8 +36,7 @@
     }
 
     &__bar {
-        padding-right: 10rem;
-
+        //padding-left: 21rem; //once the component with profile pic is added, make this all just space around
     }
 
     &__link,
@@ -52,6 +46,27 @@
         font-size: 2rem;
         color: $color-primary;
         font-weight: 300;
+    }
+
+    //Edit the active states and hover
+
+    &__account {
+        margin-left: 10rem;
+    }
+    
+    &__button-bubble--login {
+        width: 5.4rem;
+        height: 3.4rem;
+        background: $color-primary;
+        border: none;
+        color: $color-white;
+    }
+    &__button-bubble--sign-up {
+        width: 5rem;
+        height: 3rem;
+        background: white;
+        border: 2px solid $color-primary;
+        color: $color-primary;
     }
 }
 
